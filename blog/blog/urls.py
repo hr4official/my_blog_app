@@ -17,5 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+     url(r'^jet/', include('jet.urls', 'jet')),  # Django JET URLS
+    url(r'^admin/', include(admin.site.urls)),
     path('admin/', admin.site.urls),
 ]
